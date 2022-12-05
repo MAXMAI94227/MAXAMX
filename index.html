@@ -9,17 +9,11 @@
     <title>奇蹟創意</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script type="text/javascript">
-      var system = {};
-      var p = navigator.platform;
-      system.Win = p.indexOf("Win") == 0;
-      system.Mac = p.indexOf("Mac") == 0;
-      system.xll = (p == "Xll")  || (p.indexOf("Linux") == 0 );
-      if (system.Win || system.Mac || system.xll) {
-      window.location.href = "./index.html"  ;
-      }
-      else{
-        window.location.href = "./Mindex.html" ;
-      }
+if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+	window.location.href="./Mindex.html";
+}else{
+	window.location.href="./index.html";
+}
     </script>
     <meta property="og:type" content="article" />
     <meta property="og:title" content="奇蹟創意；書銘" />
